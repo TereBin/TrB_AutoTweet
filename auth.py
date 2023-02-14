@@ -20,7 +20,6 @@ access_token, access_secret = oauth1_user_handler.get_access_token(PIN)
 
 twitter_id = input("트위터 아이디 : ")
 tweet = input("문장 : ")
-tweet += " #TrB_AutoTweet"
 duration = input("시간 : ")
 input_image = input("이미지를 넣으려면 Y : ")
 
