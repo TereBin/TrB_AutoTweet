@@ -29,6 +29,7 @@ def tweet(twitter_api_data_path, user_data):
         auth = tweepy.OAuthHandler(api_key, api_secret)
         auth.set_access_token(access_token, access_secret)
         bot = tweepy.API(auth)
+        tweet = tweet + "\n#TrB_AutoTweet " + str(current_time.tm_hour) + "시 자동트윗"
         if img_file != "":
             bot.update_status_with_media(status=tweet, filename=img_file)
         else:
