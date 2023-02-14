@@ -3,9 +3,9 @@ from time import localtime
 import json
 import tweepy
 
-twitter_api_data_path = "D:/TereBin/coding/TrB_AutoTweet/data/twitter_api_data.txt"
-user_data_path = "D:/TereBin/coding/TrB_AutoTweet/data/user_data.json"
-err_log_path = "D:/TereBin/coding/TrB_AutoTweet/data/err_log.txt"
+twitter_api_data_path = "/data/twitter_api_data.txt"
+user_data_path = "/data/user_data.json"
+err_log_path = "/data/err_log.txt"
 current_time: time.struct_time = localtime(time.time())
 
 
